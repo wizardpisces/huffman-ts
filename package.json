@@ -19,8 +19,7 @@
     "start": "tsdx watch",
     "build": "tsdx build",
     "test": "tsdx test",
-    "lint": "tsdx lint",
-    "prepare": "tsdx build",
+    "prepublish": "tsdx build && npm run test",
     "size": "size-limit",
     "analyze": "size-limit --why"
   },
