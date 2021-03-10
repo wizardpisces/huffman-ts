@@ -1,14 +1,16 @@
-import { Huffman } from "../dist";
+import { Huffman, HuffmanEncoded, Tree } from "../index";
 
 describe('huffman test', () => {
     it('treeFromText/encodeTree/decodeTree/', () => {
         function testHuffman1() {
 
             let text = 'BCAADDDCCACACAC'
-            let huffman = Huffman.treeFromText(text); // generate the tree
+            // let text = 'do or do not';
+
+            let huffman: Tree = Huffman.treeFromText(text); // generate the tree
             console.log(huffman)
 
-            let treeEncoded = huffman.encodeTree(); // will return an javascript array with tree representation
+            let treeEncoded: HuffmanEncoded = huffman.encodeTree(); // will return an javascript array with tree representation
             let treeJSON = JSON.stringify(treeEncoded); // get a JSON string for easy transportation
 
             expect(treeJSON).toEqual('["C",[["B","D"],"A"]]')
@@ -23,7 +25,7 @@ describe('huffman test', () => {
     it('treeFromText/encode/decode/', () => {
         function testHuffman2() {
             let text = 'BCAADDDCCACACAC'
-            let huffman = Huffman.treeFromText(text); // first we need to create the tree to make encoding/decoding
+            let huffman: Tree = Huffman.treeFromText(text); // first we need to create the tree to make encoding/decoding
             let encoded = huffman.encode(text); // will return the compressed version of text
             console.log(encoded, encoded.length)
 

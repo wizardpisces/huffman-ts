@@ -32,7 +32,7 @@
     "trailingComma": "es5"
   },
   "name": "huffman-ts",
-  "author": "刘泽",
+  "author": "wizardpisces",
   "module": "dist/huffman-ts.esm.js",
   "size-limit": [
     {
