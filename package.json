@@ -20,7 +20,7 @@
     "build": "tsdx build",
     "test": "tsdx test",
     "lint": "tsdx lint --fix",
-    "prepublish": "npm run lint && tsdx build && npm run test",
+    "prepublishOnly": "npm run lint && tsdx build && npm run test",
     "size": "size-limit",
     "analyze": "size-limit --why"
   },
@@ -58,6 +58,8 @@
   ],
   "devDependencies": {
     "@size-limit/preset-small-lib": "^4.10.1",
+    "@typescript-eslint/eslint-plugin": "^4.6.0",
+    "@typescript-eslint/parser": "^4.6.0",
     "husky": "^5.1.3",
     "size-limit": "^4.10.1",
     "tsdx": "^0.14.1",
