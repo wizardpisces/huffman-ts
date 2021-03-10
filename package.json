@@ -1,5 +1,5 @@
 {
-  "version": "0.1.0",
+  "version": "0.1.1",
   "license": "MIT",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -34,6 +34,13 @@
   "name": "huffman-ts",
   "author": "wizardpisces",
   "module": "dist/huffman-ts.esm.js",
+  "keywords": [
+    "huffman",
+    "tree",
+    "encode",
+    "decode",
+    "typescript"
+  ],
   "size-limit": [
     {
       "path": "dist/huffman-ts.cjs.production.min.js",

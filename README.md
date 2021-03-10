@@ -14,7 +14,7 @@ npm install --save huffman-ts
 ```ts
 import {Huffman} from 'huffman-ts'
 
- let text = 'BCAADDDCCACACAC'
+let text = 'BCAADDDCCACACAC'
 let huffman = Huffman.treeFromText(text); // first we need to create the tree to make encoding/decoding
 let encoded = huffman.encode(text); // will return the compressed version of text
 console.log(encoded, encoded.length)
