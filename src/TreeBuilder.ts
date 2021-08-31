@@ -39,6 +39,7 @@ export class TreeBuilder {
   }
 
   compressCombinedTable(item: FrequencyItem): HuffmanEncoded {
+    // eg: [[['a',1],['b',1]],2] -> ['a','b']; 丢弃权重数值
     let value: FrequencyItem[0] = item[0];
     if (Array.isArray(value)) {
       return [
