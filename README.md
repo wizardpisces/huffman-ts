@@ -5,6 +5,8 @@ full compatibility with Huffman algorithm reference.
 
 Typescript version of [huffman_js](https://github1s.com/wilkerlucio/huffman_js)
 
+[Demo](https://wizardpisces.github.io/playground/huffman)
+
 ## Basic Usage
 
 ```
